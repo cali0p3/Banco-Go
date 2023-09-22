@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"BANCO-GO/contas"
+	"fmt"
+)
 
 type ContaCorrente struct {
 	titular       string
@@ -10,11 +13,7 @@ type ContaCorrente struct {
 }
 
 func main() {
-	contaDoGuilherme := ContaCorrente{titular: "Guilherme",
-		numeroAgencia: 589, numeroConta: 123456, saldo: 125.5}
+	contaDaRoberta := contas.ContaPoupanca{}
 
-	contaDaBruna := ContaCorrente{"Bruna", 222, 111222, 200}
-
-	fmt.Println(contaDoGuilherme)
-	fmt.Println(contaDaBruna)
+	fmt.Println(contaDaRoberta)
 }

@@ -1,12 +1,11 @@
 package contas
 
-import "C:\Users\roberta.longoni\Documents\Dev\Go\Banco-Go\clientes"
+import "BANCO-GO/clientes"
 
 type ContaCorrente struct {
-	Titular       clientes.Titular
-	NumeroAgencia int
-	NumeroConta   int
-	saldo         float64
+	Titular                   clientes.Titular
+	NumeroAgenci, NumeroConta int
+	saldo                     float64
 }
 
 func (c *ContaCorrente) Sacar(valorDoSaque float64) string {
